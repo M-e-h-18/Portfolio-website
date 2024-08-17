@@ -1,0 +1,82 @@
+.contact-container {
+  text-align: center;
+  padding: 0px;
+  height:25vh;
+}
+h2{
+  margin-bottom: 0px;
+ 
+}
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  transition: all 0.5s ease; 
+}
+
+.contact-c,
+.contact-rest {
+  display: inline-block; 
+  transition: transform 0.5s ease; 
+}
+
+.contact-o {
+  position: relative;
+  
+  display: inline-block;
+  width: 1em; 
+  transition: width 0.5s ease, transform 0.5s ease; 
+  z-index: 6; 
+ 
+}
+
+.highlight-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  white-space: nowrap;
+  opacity: 0; 
+  transition: opacity 0.5s ease; 
+  font-size: 1rem;
+  z-index: 5; 
+}
+
+.contact-title.clicked .highlight-text {
+  opacity: 1; 
+  display:inline-block;
+}
+
+.contact-o.expand {
+  width: 4em; 
+  transform: scale(1.5);
+  
+}
+
+.contact-title.clicked .contact-c {
+  transform: translateX(-1em); 
+}
+
+.contact-title.clicked .contact-rest {
+  transform: translateX(1em); 
+}
+
+.contact-info {
+  margin: 0px;
+  font-size: 1rem;
+  color: rgb(21, 2, 2);
+  
+  width:100%;
+}
+
+.contact-info a {
+  color: rgb(82, 171, 66);
+  text-decoration: underline;
+}

@@ -1,0 +1,37 @@
+.scrolling-text-bar {
+    width: 7%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background-color: #000;
+    margin: 20px 0;
+    font-size: 35px;
+    color: #88BDBC;
+    position: relative;
+    border-radius: 20px;
+  }
+  
+  .scrolling-text {
+    display:inline-flex;
+    align-items: center;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: scroll 100s linear infinite;
+  }
+  
+  .scrolling-text span {
+    display: inline-block;
+    padding-right: 2rem; /* Space between repeating text */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

@@ -1,0 +1,61 @@
+/* Main Container */
+.containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  text-align: center;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.name-container h1 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 10rem;
+  color: black;
+}
+
+
+.arrow-container {
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 35px solid #254E58;
+  transform: rotate(0deg);
+  animation: bounce-arrow 1s infinite;
+}
+
+
+@keyframes bounce-arrow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-0.5rem) rotate(0deg);
+  }
+}
