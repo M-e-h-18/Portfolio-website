@@ -11,7 +11,7 @@ const ProjectsSection = () => {
     setTimeout(() => {
       setShowProjects(!showProjects);
       setExpandO(false);
-    }, 200); // Delay to match the animation duration
+    }, 200); 
   };
 
   return (
