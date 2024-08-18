@@ -53,15 +53,15 @@
 }
 
   .section.clicked .highlight-o {
-    transform: scale(1.8); /* Adjust scaling as needed */
+    transform: scale(1.8); 
   }
   
   .section-title.clicked .before {
-    transform: translateX(-4em); /* Adjust as needed */
+    transform: translateX(-4em); 
   }
   
   .section-title.clicked .after {
-    transform: translateX(4em); /* Adjust as needed */
+    transform: translateX(4em); 
   }
   
   .section-content {
