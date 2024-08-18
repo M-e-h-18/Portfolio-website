@@ -23,7 +23,7 @@
   
   .scrolling-text span {
     display: inline-block;
-    padding-right: 2rem; /* Space between repeating text */
+    padding-right: 2rem; 
   }
   
   @keyframes scroll {
