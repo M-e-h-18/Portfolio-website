@@ -12,7 +12,7 @@ const CanvasNameDisplay = ({ delay = 0 }) => {
 
   const rectHeightRef = useRef(0);
   const rectGrowing = useRef(true);
-  const rectRadius = 10; // Radius for rounded corners
+  const rectRadius = 10; 
 
   useEffect(() => {
     const canvas = canvasRef.current;
