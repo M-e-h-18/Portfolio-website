@@ -11,7 +11,7 @@ import React, { useRef, useEffect } from 'react';
   
     const rectHeightRef = useRef(0);
     const rectGrowing = useRef(true);
-    const rectRadius = 10; // Radius for rounded corners
+    const rectRadius = 10; 
   
     useEffect(() => {
       const canvas = canvasRef.current;
